@@ -9,19 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2affde1-695d-468e-8134-e411af9db11d" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/handler/CusRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/http/LsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/http/LsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/CusHttpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/CusServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/LsServlet.java" afterDir="false" />
+    <list default="true" id="c2affde1-695d-468e-8134-e411af9db11d" name="Changes" comment="自定义CusTomcat完成多线程，完成自定义请求对象">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/WebUtils/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/WebUtils/WebUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/handler/CusRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/handler/CusRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/http/LsRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/http/LsRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/http/LsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/http/LsResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +213,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703947664774</updated>
       <workItem from="1703947666445" duration="2664000" />
-      <workItem from="1704151770236" duration="13915000" />
+      <workItem from="1704151770236" duration="15751000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1703950300027</created>
@@ -229,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703950300027</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="自定义CusTomcat完成多线程，完成自定义请求对象">
+      <created>1704167668072</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704167668072</updated>
+    </task>
+    <task id="LOCAL-00003" summary="自定义CusTomcat完成多线程，完成自定义请求对象">
+      <created>1704167689417</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704167689417</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +245,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="自定义CusTomcat完成多线程，完成自定义请求对象" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义CusTomcat完成多线程，完成自定义请求对象" />
   </component>
 </project>

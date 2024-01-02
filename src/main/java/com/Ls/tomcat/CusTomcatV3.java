@@ -22,7 +22,6 @@ public class CusTomcatV3 {
             Thread thread = new Thread(cusRequestHandler);
             //开启线程任务
             thread.start();
-
         }
     }
 }

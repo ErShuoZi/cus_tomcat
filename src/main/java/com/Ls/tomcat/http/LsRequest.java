@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 //封装Http请求数据 method/uri/param
 //等价于原生Servlet中的HttpServletRequest
 public class LsRequest {
+    private InputStream inputStream = null;
     private String method;
     private String uri;
     //参数列表
@@ -17,7 +18,8 @@ public class LsRequest {
 
     //inputStream 是和对应的请求的socket关联
     public LsRequest(InputStream inputStream) {
-        init(inputStream);
+        this.inputStream = inputStream;
+        init();
     }
 
 
@@ -47,14 +49,12 @@ public class LsRequest {
     }
 
 
-    private void init(InputStream inputStream) {
+    private void init() {
         try {
             BufferedReader bufferedReader =
                     new BufferedReader(new InputStreamReader(inputStream, "utf-8"));
-            System.out.println("----------------------------------------");
             //读取
             String firstLine = bufferedReader.readLine();
-            System.out.println(firstLine);
             method = firstLine.split(" ")[0];
             //获取uri
             String regex = "^([^?#]+)";
@@ -82,13 +82,14 @@ public class LsRequest {
 
             String message = null;
             //循环的读取
+            System.out.println("接收到客户端的数据");
             while ((message = bufferedReader.readLine()) != null) {
                 //判断message长度是否为0
                 if (message.length() == 0) {
                     //读取完成
                     break;
                 }
-                System.out.println("接收到客户端的数据=" + message);
+                System.out.println(message);
             }
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException(e);
