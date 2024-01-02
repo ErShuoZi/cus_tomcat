@@ -10,7 +10,7 @@ public class CusTomcatV3 {
     public static void main(String[] args) throws IOException {
         //1.创建ServerSocket,监听8080
         ServerSocket serverSocket = new ServerSocket(8080);
-        System.out.println("======customcatV2 is running at port 8080");
+        System.out.println("======customcatV3 is running at port 8080");
         //如果连接没有关闭则一致等待连接
         while (!serverSocket.isClosed()){
             //等待客户端连接

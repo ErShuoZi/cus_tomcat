@@ -3,6 +3,7 @@ package com.Ls.tomcat.handler;
 
 import com.Ls.tomcat.http.LsRequest;
 import com.Ls.tomcat.http.LsResponse;
+import com.Ls.tomcat.servlet.LsServlet;
 
 import java.io.*;
 import java.net.Socket;
@@ -27,9 +28,14 @@ public class CusRequestHandler implements Runnable {
         //对客户端进行交互
 
         try {
+            //最终
             inputStream = socket.getInputStream();
-
             LsRequest lsRequest = new LsRequest(inputStream);
+            outputStream = socket.getOutputStream();
+            LsResponse lsResponse = new LsResponse(outputStream);
+            //创建LsCalServlet对象
+            LsServlet lsServlet = new LsServlet();
+            lsServlet.doGet(lsRequest,lsResponse);
             //设置响应头
             //String respHeader = "HTTP/1.1 200\n" +
             //        "Content-Type: text/html;charset=UTF-8\r\n\r\n";
@@ -40,23 +46,13 @@ public class CusRequestHandler implements Runnable {
             //outputStream = socket.getOutputStream();
             //outputStream.write(respBody.getBytes());
 
-            outputStream = socket.getOutputStream();
-            LsResponse lsResponse = new LsResponse(outputStream);
-            String resp = lsResponse.respHeader + "<h1>哈哈哈哈</h1>";
-            outputStream = lsResponse.getOutputStream();
-            outputStream.write(resp.getBytes());
-
+            //outputStream = socket.getOutputStream();
+            //LsResponse lsResponse = new LsResponse(outputStream);
+            //String resp = lsResponse.respHeader + "<h1>哈哈哈哈</h1>";
+            //outputStream = lsResponse.getOutputStream();
+            //outputStream.write(resp.getBytes());
         } catch (Exception e) {
             System.out.println("发生了异常，请联系管理员");
-        } finally {
-            try {
-                outputStream.flush();
-                outputStream.close();
-                inputStream.close();
-                socket.close();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
         }
     }
 }
