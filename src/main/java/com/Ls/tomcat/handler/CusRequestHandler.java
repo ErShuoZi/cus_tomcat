@@ -1,9 +1,10 @@
 package com.Ls.tomcat.handler;
 
 
+import com.Ls.tomcat.CusTomcatV4;
 import com.Ls.tomcat.http.LsRequest;
 import com.Ls.tomcat.http.LsResponse;
-import com.Ls.tomcat.servlet.LsServlet;
+import com.Ls.tomcat.servlet.CusHttpServlet;
 
 import java.io.*;
 import java.net.Socket;
@@ -33,8 +34,29 @@ public class CusRequestHandler implements Runnable {
             outputStream = socket.getOutputStream();
             LsResponse lsResponse = new LsResponse(outputStream);
             //创建LsCalServlet对象
-            LsServlet lsServlet = new LsServlet();
-            lsServlet.doGet(lsRequest,lsResponse);
+            //LsCalServlet lsCalServlet = new LsCalServlet();
+            //lsCalServlet.doGet(lsRequest,lsResponse);
+            //使用反射
+            String uri = lsRequest.getUri();
+
+            String servletName =  CusTomcatV4.servletUrlMapping.get(uri);
+            if (servletName == null) {
+                servletName = "";
+            }
+            //在通过servletName获取到对应的实例
+            CusHttpServlet cusHttpServlet = CusTomcatV4.servletMapping.get(servletName);
+
+            //调用service方法，动态绑定，调用运行类型的doPost/doGet！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+          if (cusHttpServlet != null){
+              cusHttpServlet.service(lsRequest,lsResponse);
+          }else {
+              String resp = lsResponse.respHeader + "<h1>404 Not Found</h1>";
+              OutputStream outputStream = lsResponse.getOutputStream();
+              outputStream.write(resp.getBytes());
+              outputStream.flush();
+              outputStream.close();
+          }
+
             //设置响应头
             //String respHeader = "HTTP/1.1 200\n" +
             //        "Content-Type: text/html;charset=UTF-8\r\n\r\n";
@@ -51,6 +73,7 @@ public class CusRequestHandler implements Runnable {
             //outputStream = lsResponse.getOutputStream();
             //outputStream.write(resp.getBytes());
         } catch (Exception e) {
+            System.out.println(e);
             System.out.println("发生了异常，请联系管理员");
         }
     }

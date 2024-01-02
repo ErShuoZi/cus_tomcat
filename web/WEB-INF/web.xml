@@ -11,4 +11,14 @@
         <servlet-name>Servlet</servlet-name>
         <url-pattern>/CalServlet</url-pattern>
     </servlet-mapping>
+
+    <!--配置自定义的Servlet-->
+    <servlet>
+        <servlet-name>LsCalServlet</servlet-name>
+        <servlet-class>com.Ls.tomcat.servlet.LsCalServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LsCalServlet</servlet-name>
+        <url-pattern>/lsCalServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

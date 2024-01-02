@@ -10,9 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2affde1-695d-468e-8134-e411af9db11d" name="Changes" comment="自定义业务Servlet">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/handler/CusRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/handler/CusRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/http/LsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/http/LsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/LsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/LsCalServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/util/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/util/WebUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/ershuozi/Desktop/Java/cus-tomcat/target/classes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,11 +79,14 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/classes" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.Ls.tomcat" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CusTomcatV3">
+  <component name="RunManager" selected="Application.CusTomcatV4">
     <configuration name="CusTomcatV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.Ls.tomcat.CusTomcatV1" />
       <module name="cus-tomcat" />
@@ -112,6 +122,35 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CusTomcatV4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Ls.tomcat.CusTomcatV4" />
+      <module name="cus-tomcat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ls.tomcat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CusTomcatV4.init" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cus-tomcat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ls.tomcat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Ls.tomcat" />
+      <option name="MAIN_CLASS_NAME" value="com.Ls.tomcat.CusTomcatV4" />
+      <option name="METHOD_NAME" value="init" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -207,11 +246,15 @@
       <item itemvalue="Application.CusTomcatV1" />
       <item itemvalue="Application.CusTomcatV2" />
       <item itemvalue="Application.CusTomcatV3" />
+      <item itemvalue="Application.CusTomcatV4" />
+      <item itemvalue="JUnit.CusTomcatV4.init" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.97" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CusTomcatV4" />
         <item itemvalue="Application.CusTomcatV3" />
+        <item itemvalue="JUnit.CusTomcatV4.init" />
         <item itemvalue="Application.CusTomcatV2" />
         <item itemvalue="Application.CusTomcatV1" />
       </list>
@@ -226,7 +269,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703947664774</updated>
       <workItem from="1703947666445" duration="2664000" />
-      <workItem from="1704151770236" duration="21721000" />
+      <workItem from="1704151770236" duration="32249000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1703950300027</created>
@@ -263,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704173874417</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="自定义业务Servlet">
+      <created>1704175500136</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704175500136</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

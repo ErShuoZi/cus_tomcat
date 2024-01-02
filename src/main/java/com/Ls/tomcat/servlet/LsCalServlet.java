@@ -7,7 +7,7 @@ import com.Ls.tomcat.util.WebUtils;
 import java.io.IOException;
 import java.io.OutputStream;
 
-public class LsServlet extends CusHttpServlet {
+public class LsCalServlet extends CusHttpServlet {
     @Override
     public void doGet(LsRequest request, LsResponse response) {
         String strNum1 = request.getParameter("num1");
@@ -15,7 +15,7 @@ public class LsServlet extends CusHttpServlet {
         int num1 = WebUtils.parseInt(strNum1, 0);
         int num2 = WebUtils.parseInt(strNum2, 0);
         int sum = num1 + num2;
-        String resp = response.respHeader + "<h1>"  + num2 + "+" + "num2aaaaa" + "="  + sum +  "</h1>";
+        String resp = response.respHeader + "<h1>" + "自定义Servlet ：" + num1 + "+" + num2 + "="  + sum +  "</h1>";
         OutputStream outputStream = response.getOutputStream();
         try {
             outputStream.write(resp.getBytes());
