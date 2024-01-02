@@ -9,14 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2affde1-695d-468e-8134-e411af9db11d" name="Changes" comment="完成自定义响应对象">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/util/WebUtils.java" afterDir="false" />
+    <list default="true" id="c2affde1-695d-468e-8134-e411af9db11d" name="Changes" comment="自定义业务Servlet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/handler/CusRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/handler/CusRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/CusHttpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/CusHttpServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/CusServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/CusServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/LsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/LsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/http/LsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/http/LsResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +226,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703947664774</updated>
       <workItem from="1703947666445" duration="2664000" />
-      <workItem from="1704151770236" duration="19992000" />
+      <workItem from="1704151770236" duration="21721000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1703950300027</created>
@@ -260,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704169601917</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="自定义业务Servlet">
+      <created>1704173874417</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704173874417</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +274,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="自定义CusTomcat完成多线程，完成自定义请求对象" />
     <MESSAGE value="完成自定义响应对象" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成自定义响应对象" />
+    <MESSAGE value="自定义业务Servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义业务Servlet" />
   </component>
 </project>

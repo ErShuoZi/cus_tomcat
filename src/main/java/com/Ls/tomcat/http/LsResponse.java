@@ -6,14 +6,13 @@ import java.io.OutputStream;
 //等价于原生Servlet中的HttpServletResponse
 public class LsResponse {
     private OutputStream outputStream = null;
-    private String DEFAULT_CONTENT_TYPE = "Content-Type: text/html;charset=UTF-8";
+    public String DEFAULT_CONTENT_TYPE = "Content-Type: text/html;charset=UTF-8";
     //http响应头
     public final String respHeader = "HTTP/1.1 200\n" +
             DEFAULT_CONTENT_TYPE + "\r\n\r\n";
 
     public LsResponse(OutputStream outputStream) {
         this.outputStream = outputStream;
-
     }
 
     public OutputStream getOutputStream() {

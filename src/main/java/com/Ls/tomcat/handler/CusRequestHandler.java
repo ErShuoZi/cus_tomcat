@@ -26,7 +26,6 @@ public class CusRequestHandler implements Runnable {
         //测试：不同线程
         System.out.println("当前线程 ===" + Thread.currentThread().getName());
         //对客户端进行交互
-
         try {
             //最终
             inputStream = socket.getInputStream();
