@@ -9,20 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2affde1-695d-468e-8134-e411af9db11d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/cus_tomcat_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/WebUtils/WebUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/servlet/Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Cal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+    <list default="true" id="c2affde1-695d-468e-8134-e411af9db11d" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/CusTomcatV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/handler/CusRequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/http/LsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/http/LsResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/CusHttpServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/CusServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Ls/tomcat/servlet/LsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Ls/WebUtils/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Ls/WebUtils/WebUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -76,14 +76,43 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.sourceCode.XML",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.Ls.tomcat" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CusTomcatV2">
+    <configuration name="CusTomcatV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Ls.tomcat.CusTomcatV1" />
+      <module name="cus-tomcat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ls.tomcat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CusTomcatV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Ls.tomcat.CusTomcatV2" />
+      <module name="cus-tomcat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ls.tomcat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5.97" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.97" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="cus-tomcat:war exploded">
@@ -170,6 +199,17 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CusTomcatV1" />
+      <item itemvalue="Application.CusTomcatV2" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.97" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CusTomcatV2" />
+        <item itemvalue="Application.CusTomcatV1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -179,8 +219,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703947664774</updated>
-      <workItem from="1703947666445" duration="2591000" />
+      <workItem from="1703947666445" duration="2664000" />
+      <workItem from="1704151770236" duration="13915000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1703950300027</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703950300027</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,5 +237,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
